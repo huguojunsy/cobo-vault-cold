@@ -63,7 +63,7 @@ public class PsbtSignedTxFragment extends SignedTxFragment {
             mBinding.txDetail.exportToSdcardHint.setText(R.string.generic_qrcode_hint);
             mBinding.txDetail.exportToSdcardHint.setOnClickListener(v -> showExportDialog());
 
-        } else if (watchWallet == WatchWallet.BLUE || watchWallet == WatchWallet.GENERIC) {
+        } else if (watchWallet.supportPsbt() && watchWallet.supportBc32QrCode()) {
             if (watchWallet == WatchWallet.BLUE) {
                 mBinding.txDetail.info.setOnClickListener(v -> showBlueWalletInfo());
             }
@@ -93,7 +93,7 @@ public class PsbtSignedTxFragment extends SignedTxFragment {
 
             }
 
-        } else if(watchWallet == WatchWallet.WASABI || watchWallet == WatchWallet.BTCPAY) {
+        } else if(watchWallet == WatchWallet.WASABI) {
             mBinding.txDetail.qr.setVisibility(View.GONE);
             mBinding.txDetail.broadcastGuide.setGravity(Gravity.START);
             mBinding.txDetail.broadcastGuide.setText(getBroadcastGuideText());
