@@ -463,4 +463,17 @@
     <string name="xrp_account_not_match_detail">该交易不属于当前金库，请检查交易信息。</string>
     <string name="simple">简单</string>
     <string name="raw">原始</string>
+    <string name="spark_token_claim_guide"><![CDATA[
+        1. 前往 https://flare.wietse.com/，勾选步骤1的声明<br>
+        2. 在步骤2中，选择 2B“Dont’t use XUMM” 后点击 “Continue” 查看 ETH compatible 地址二维码 Prepare for claiming  Spark tokens<br>
+        3. 在步骤3中，选择 “Skip this step, I own an ETH compatible account & own the secret”<br>
+        4. 在步骤4中，点击照相机按钮，扫描 ETH compatible 地址二维码（点击下方按钮查看）<br>
+        5. 根据步骤5中的引导，将生成的以“02”开头的字符串粘贴到账户的 Message Key 区域，点击“update”，用 Cobo 金库扫描生成的交易，完成签名<br>
+        6. 准备工作完成，等待 Flare Networks 发放 Spark tokens<br>
+    ]]></string>
+    <string name="spark_token_claim_guide1">详细图文教程及Flare项目相关问题，请访问：https://cobo.com/flare</string>
+    <string name="spark_token_prepare_title">获取 Spark tokens 准备工作：</string>
+    <string name="claim_spark_token_button">查看 ETH compatible 地址二维码</string>
+    <string name="spark_token_address_title">ETH compatible 地址</string>
+    <string name="spark_token_guide2">请在 https://flare.wietse.com/\n 第4步扫描二维码</string>
 </resources>
